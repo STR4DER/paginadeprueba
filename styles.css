@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;/*establece el tipo de fuente a utilizar en el documento*/
+    margin: 0;/*establece la margen general dentro del documento*/
+    padding: 0;/*establece el espacio entre los elementos del documento*/
+    background-color: black;/*establece el color del fondo del documento*/
+    color: white;
+}
+
+header {
+    background-color: #d10000; /*Determina el color del fondo de la cabecera*/
+    color: white;/*establece el color del texto de la cabecera*/
+    padding: 10px 0;/*establece el espacio de los elemntos dentro de la cabecera*/
+    text-align: center;/*Alinea el texto dentro de la cabecera*/
+}
+
+nav ul {
+    list-style-type: none;/*establece el tipo de lista para el menu*/
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; /*sirve para indicar la disposicion del menu*/
+    margin: 0 15px; /*Determina el margen del menu*/
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;/*establece el formato del texto*/
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;/*establece la margen de la parte inferior de la seccion*/
+    padding: 15px;
+    border: 1px solid #ccc;/*establece el grosor, la intesidad y el color del borde*/
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f1f1f1;
+}
+
+.columnas {
+    display: flex;/*establece la disposicion de los elementos de manera dinamica*/
+    justify-content: space-between;/*organiza los elementos internos dejando espacio entre ellos*/
+    margin-top: 20px;
+}
+
+.columna {
+    flex: 1; /* Cada columna tomará el mismo espacio */
+    margin: 0 10px; /* Espacio entre columnas */
+    padding: 15px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .columnas {
+        flex-direction: column; /* Cambia a una columna en pantallas más pequeñas */
+    }
+    .img2{
+        float: none;
+    }
+    .columna {
+        margin: 10px 0; /* Espacio vertical en pantallas pequeñas */
+    }
+}
+.logo1 {
+    width: 40%;
+    padding-left: 30%;
+}
+.img2{
+    width: 50%;
+    padding-top: 8%;
+    float: right;
+}
+table{
+    background-color: #d10000;
+    border-collapse: collapse;
+    border-color: black;
+}
+#contacto{
+    background-color: #d10000;
+    color: white;
+}
